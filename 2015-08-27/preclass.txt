@@ -13,6 +13,12 @@
     set up, scheduled, and communicated to p workers at a (serial)
     central server; this takes an overhead time alpha per task.
     What is the theoretically achievable throughput (tasks/time)?
+ Ans:   Time at server per task = alpha
+Time per task is not specified -- call it T
+Time to complete k tasks is k*(T+alpha) in total
+Parallel part is the k*T part.
+Overhead for k tasks (unavoidable) = k*alpha
+k tasks in time k*alpha is best case -- rate is k/(k*alpha) = 1/alpha
 
 3.  Under what circumstances is it best to not tune?
 
